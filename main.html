@@ -1,78 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Carousel Example</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div class="container">
+  <h2>Carousel Example</h2>  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
-    <ul class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-    </ul>
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-        <div class="carousel-item first-slide">
-            <img src="first-slide.jpg" alt="First Slide">
-            <div class="carousel-caption">
-                <h3>First Slide</h3>
-                <p>Description for the first slide.</p>
-            </div>
-        </div>
-        <div class="carousel-item second-slide">
-            <img src="second-slide.jpg" alt="Second Slide">
-            <div class="carousel-caption">
-                <h3>Second Slide</h3>
-                <p>Description for the second slide.</p>
-            </div>
-        </div>
-        <div class="carousel-item third-slide active">
-            <img src="third-slide.jpg" alt="Third Slide">
-            <div class="carousel-caption">
-                <h3>Third Slide</h3>
-                <p>Description for the third slide.</p>
-            </div>
-        </div>
-        <div class="carousel-item fourth-slide">
-            <img src="fourth-slide.jpg" alt="Fourth Slide">
-            <div class="carousel-caption">
-                <h3>Fourth Slide</h3>
-                <p>Description for the fourth slide.</p>
-            </div>
-        </div>
-        <div class="carousel-item fifth-slide">
-            <img src="fifth-slide.jpg" alt="Fifth Slide">
-            <div class="carousel-caption">
-                <h3>Fifth Slide</h3>
-                <p>Description for the fifth slide.</p>
-            </div>
-        </div>
+      <div class="item first-slide">
+        <img src="la.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item second-slide">
+        <img src="chicago.jpg" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item active third-slide">
+        <img src="ny.jpg" alt="New York" style="width:100%;">
+      </div>
+
+      <div class="item fourth-slide">
+        <img src="paris.jpg" alt="Paris" style="width:100%;">
+      </div>
+
+      <div class="item fifth-slide">
+        <img src="tokyo.jpg" alt="Tokyo" style="width:100%;">
+      </div>
     </div>
 
     <!-- Left and right controls -->
-    <a class="carousel-control-prev left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-        <span class="sr-only">Previous</span>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-        <span class="sr-only">Next</span>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
     </a>
+  </div>
 </div>
-
-<!-- Bootstrap JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
